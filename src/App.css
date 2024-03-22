@@ -1,0 +1,22 @@
+.infinite-banner{
+    animation-name: infinite-scroller;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    font-size: 25vmin;
+    font-weight: 800;
+}
+
+.infinite-banner h1{
+    display: inline-block;
+    margin-right: 10vmin;
+}
+
+@keyframes infinite-scroller {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
